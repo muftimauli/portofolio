@@ -11,9 +11,9 @@ export default function Projects() {
         description: 'Render 3D animasi Barongan Kediri cinematic dengan efek asap menggunakan Blender.',
       },
       {
-        title: '3D Animasi Reog Ponorogo',
+        title: '3D Animasi Ganci',
         video: '/videos/render2.mp4',
-        description: 'Render 3D animasi reog ponorogo.',
+        description: 'Render 3D mentahan iklan gantungan kunci di Blender.',
       },
     ],
     Web: [
