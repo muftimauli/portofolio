@@ -7,36 +7,36 @@ export default function Projects() {
     '3D': [
       {
         title: '3D Animasi Barongan',
-        video: '/videos/render1.mp4',
+        image: '/videos/render1.jpeg',
         description: 'Render 3D animasi Barongan Kediri cinematic dengan efek asap menggunakan Blender.',
       },
       {
         title: '3D Animasi Ganci',
-        video: '/videos/render2.mp4',
+        image: '/videos/render2.jpeg',
         description: 'Render 3D mentahan iklan gantungan kunci di Blender.',
       },
     ],
     Web: [
       {
         title: 'Web Edukasi Terarium',
-        video: '/videos/web1.mp4',
+        image: '/videos/web1.jpeg',
         description: 'Situs Web edukasi terarium, paludarium, aquascape Bio Aktif.',
       },
       {
         title: 'Toko computer',
-        video: '/videos/web2.mp4',
+        image: '/videos/web2.jpeg',
         description: 'Toko online responsif dengan fitur keranjang dan pembayaran menggunakan Ci3.',
       },
     ],
     IoT: [
       {
         title: 'Pakan Ikan Otomatis',
-        video: '/videos/iot1.mp4',
+        image: '/videos/iot1.jpeg',
         description: 'Pakan ikan otomatis menggunakan Arduino Uno di kontrol lewat bluetooth.',
       },
       {
         title: 'Robot Pelayan Berbicara',
-        video: '/videos/iot2.mp4',
+        image: '/videos/iot2.jpeg',
         description: 'Kepala robot pelayan makanan.',
       },
     ],
@@ -196,14 +196,11 @@ export default function Projects() {
               </h3>
               
               <div className="relative mb-3 sm:mb-4" data-aos="fade-up" data-aos-delay="200">
-                <video
-                  src={projects[category][currentIndex].video}
+                <img
+                  src={projects[category][currentIndex].image}
                   className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover rounded-lg border border-cyan-500/30"
-                  muted
-                  loop
-                  autoPlay
-                  playsInline
-                  key={projects[category][currentIndex].video}
+                  alt={projects[category][currentIndex].title}
+                  key={projects[category][currentIndex].image}
                 />
                 <div className="absolute inset-0 rounded-lg border border-cyan-400/20 pointer-events-none"></div>
               </div>
@@ -308,7 +305,7 @@ export default function Projects() {
           .mb-3 {
             margin-bottom: 0.75rem;
           }
-          video {
+          img {
             height: 200px;
           }
           .max-w-[600px] {
@@ -336,7 +333,7 @@ export default function Projects() {
           p {
             font-size: 1rem;
           }
-          video {
+          img {
             height: 250px;
           }
         }
